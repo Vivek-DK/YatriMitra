@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-brand-primary: #10b981;
+  --color-brand-secondary: #0e0e10;
+  --color-bg-dark: #0a0a0b;
+  --color-panel-dark: #121214;
+  --color-input-dark: #1a1a1d;
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--color-bg-dark);
+  color: #94a3b8; /* text-slate-400 */
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-color: #0f0f11 !important;
+}
+
+/* Custom scrollbar for dark theme */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Dark Leaflet Popups */
+.dark-popup .leaflet-popup-content-wrapper {
+  background: #1a1a1d !important;
+  color: #e2e8f0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+.dark-popup .leaflet-popup-tip {
+  background: #1a1a1d !important;
+}
+
+/* Mobile-first adjustments */
+@media (max-width: 640px) {
+  .leaflet-control-attribution {
+    display: none;
+  }
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "Yatri-Mitra Shared Mobility Tracker",
+  "description": "A real-time shared mobility simulation and tracking application for commuters in smaller towns, featuring live ETA calculation and route mapping.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
